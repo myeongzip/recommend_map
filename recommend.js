@@ -7,8 +7,10 @@ function read_list() {
     }
 }
 
-funcion 
-
 // 거리순
 // 리뷰 많은 순
 // 평점 순
+
+function option_select() {
+
+}

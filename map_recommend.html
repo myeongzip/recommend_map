@@ -4,6 +4,8 @@
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="recommend.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="/home/cwjang/projects/jspsych/jquery-csv-master/src/jquery.csv.js"></script>
         <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
@@ -42,10 +44,34 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-locatecontrol/0.66.2/L.Control.Locate.min.css"/>
 </head>
 <body>
-    
-    
-            <div class="folium-map" id="map_d11deb67d4fdcc6b02121dac33010707" ></div>
+    <div class="option">
+        <div class="order-select">
+            <label for="order-by">정렬 </label>
+            <select name="order-by" id="order-type">
+                <option value="distance">거리순</option>
+                <option value="review">리뷰 많은순</option>
+                <option value="score">평점순</option>
+            </select>
+        </div>
+        <div class="cate-select">
+            <label for="cate-select">음식 카테고리 </label>
+            <select name="cate-select" id="food-type">
+                <option value="한식">한식</option>
+                <option value="중식">중식</option>
+                <option value="일식">일식</option>
+                <option value="양식">양식</option>
+                <option value="카페">카페</option>
+            </select>
+        </div>
         
+    </div>
+    
+    </div>
+    <div class="folium-map" id="map_d11deb67d4fdcc6b02121dac33010707" style="width: 1000px; height:500px"></div>
+    <div class="list">
+        정렬되는 리스트 들어갈 자리
+    </div>
+    
 </body>
 <script>
     
